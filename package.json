@@ -1,0 +1,32 @@
+{
+  "name": "flyd-reducemerge",
+  "version": "0.0.1",
+  "description": "Flyd module for conveniently merging and reducing several streams into one.",
+  "main": "reducemerge.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paldepind/flyd-reducemerge.git"
+  },
+  "keywords": [
+    "flyd",
+    "reduce",
+    "merge",
+    "reducemerge",
+    "combine"
+  ],
+  "author": "Simon Friis Vindum",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paldepind/flyd-reducemerge/issues"
+  },
+  "homepage": "https://github.com/paldepind/flyd-reducemerge",
+  "dependencies": {
+    "flyd": "0.0.7"
+  }
+}
