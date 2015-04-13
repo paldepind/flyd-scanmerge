@@ -1,13 +1,13 @@
 var flyd = require('flyd');
 
-function update(s, pairs, i, v) {
-  s(pairs[i][1](s.val, v));
-}
-
-module.exports = flyd.curryN(2, function(pairs, value) {
-  var s = flyd.stream(value); 
-  for (var i = 0; i < pairs.length; ++i) {
-    flyd.map(update.bind(null, s, pairs, i), pairs[i][0]);
-  }
-  return s;
+module.exports = flyd.curryN(2, function(pairs, acc) {
+  var streams = pairs.map(function(p) { return p[0]; });
+  var fns = pairs.map(function(p) { return p[1]; });
+  return flyd.stream(streams, function(self, changed) {
+    if (changed !== undefined) {
+      var idx = streams.indexOf(changed);
+      acc = fns[idx](acc, changed());
+    }
+    return acc;
+  }, true);
 });

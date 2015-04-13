@@ -1,6 +1,6 @@
 {
   "name": "flyd-reducemerge",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Flyd module for conveniently merging and reducing several streams into one.",
   "main": "reducemerge.js",
   "directories": {
@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/paldepind/flyd-reducemerge",
   "dependencies": {
-    "flyd": "0.0.7"
+    "flyd": "0.1.x"
   }
 }

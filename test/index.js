@@ -15,4 +15,13 @@ describe('reduceMerge', function() {
     add(5); sub(8); sub(4); add(12);
     assert.equal(sum(), 5);
   });
+  it('initially has initial value', function() {
+    var add = stream(2);
+    var sub = stream(4);
+    var sum = reduceMerge([
+      [add, function(sum, n) { return sum + n; }],
+      [sub, function(sum, n) { return sum - n; }],
+    ], 0);
+    assert.equal(sum(), 0);
+  });
 });
