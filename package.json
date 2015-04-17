@@ -1,8 +1,8 @@
 {
-  "name": "flyd-reducemerge",
-  "version": "0.1.0",
-  "description": "Flyd module for conveniently merging and reducing several streams into one.",
-  "main": "reducemerge.js",
+  "name": "flyd-scanmerge",
+  "version": "0.0.1",
+  "description": "Flyd module for conveniently merging and scanning several streams into one.",
+  "main": "scanmerge.js",
   "directories": {
     "test": "test"
   },
@@ -11,21 +11,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/paldepind/flyd-reducemerge.git"
+    "url": "https://github.com/paldepind/flyd-scanmerge.git"
   },
   "keywords": [
     "flyd",
-    "reduce",
+    "scan",
     "merge",
-    "reducemerge",
+    "scanmerge",
     "combine"
   ],
   "author": "Simon Friis Vindum",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/paldepind/flyd-reducemerge/issues"
+    "url": "https://github.com/paldepind/flyd-scanmerge/issues"
   },
-  "homepage": "https://github.com/paldepind/flyd-reducemerge",
+  "homepage": "https://github.com/paldepind/flyd-scanmerge",
   "dependencies": {
     "flyd": "0.1.x"
   }
