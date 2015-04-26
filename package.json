@@ -1,6 +1,6 @@
 {
   "name": "flyd-scanmerge",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Flyd module for conveniently merging and scanning several streams into one.",
   "main": "scanmerge.js",
   "directories": {
